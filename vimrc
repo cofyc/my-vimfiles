@@ -316,3 +316,7 @@ augroup END
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=7
+
+" go
+au BufRead,BufNewFile *.go set noexpandtab
+au FileType go au BufWritePre <buffer> Fmt
