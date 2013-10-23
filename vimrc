@@ -2,12 +2,6 @@
 "
 " File: ~/.vimrc
 " Author: Yecheng Fu <cofyc.jackson@gmail.com>
-" 
-" Remainder:
-"
-" 1. format table
-"   <leader>tf, see ~/.vim/plugin/table_format.vim
-"
 
 set nocompatible
 set backspace=indent,eol,start
