@@ -43,3 +43,6 @@
 [submodule "vim/bundle/salt-vim"]
 	path = vim/bundle/salt-vim
 	url = https://github.com/saltstack/salt-vim.git
+[submodule "vim/bundle/puppet-syntax-vim"]
+	path = vim/bundle/puppet-syntax-vim
+	url = git@github.com:puppetlabs/puppet-syntax-vim.git
