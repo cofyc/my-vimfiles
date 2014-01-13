@@ -132,9 +132,6 @@ let Tlist_Exit_OnlyWindow = 1
 autocmd FileType gitcommit DiffGitCached | wincmd r | wincmd =
 au BufRead,BufNewFile *.vcl :set ft=vcl
 
-
-au BufRead,BufNewFile *.pp set filetype=ruby
-
 " Macros
 " @link http://vim.wikia.com/wiki/Macros
 :nnoremap <Space> @q
