@@ -338,3 +338,9 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
+
+" align
+" align on first separator only
+map <leader>tf= :Align! lp1P1: =<CR>
+map <leader>tf=> :Align! lp1P1: =><CR>
+map <leader>tf: :Align! lp1P1: :<CR>

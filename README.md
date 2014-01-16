@@ -8,18 +8,17 @@
 
 ### Align columns
 
-See table_format.vim.
 See http://www.vim.org/scripts/script.php?script_id=294 for Align usage.
 See http://www.drchip.org/astronaut/vim/align.html#Examples for Align examples.
 See http://vimcasts.org/episodes/aligning-text-with-tabular-vim/.
 
-1. align columns separeted by spaces
+#### align columns separeted by spaces
 
 ```
-<leader>tf
+<leader>t<sep>
 ```
 
-2. align on something
+#### align on provided separator
 
 a=ok=
 bb=wrong
@@ -34,13 +33,13 @@ or
 Tab/=
 ```
 
-3. do not align
+#### do not align
 
 ```
 Tab/:\zs
 ```
 
-4. table markup
+#### table markup
 
 |start|eat|left|
 |12|5|7|
@@ -49,7 +48,7 @@ Tab/:\zs
 Tab/|
 ```
 
-5. align on text
+#### align on text instead of separator
 
 See http://stackoverflow.com/questions/2129519/align-text-only-on-first-separator-in-vim.
 
@@ -65,7 +64,7 @@ bb=  ccc
 tab /=\zs/
 ```
 
-6. align on first separactor only
+#### align on first separactor only
 
 a=b=
 bb=ccc
@@ -78,6 +77,12 @@ ab = ccc
 ```
 AlignCtrl lp1P1:
 Align =
+```
+
+or
+
+```
+Align! lp1P1: =
 ```
 
 ### Hexadecimal Edit
