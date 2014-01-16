@@ -8,21 +8,77 @@
 
 ### Align columns
 
+See table_format.vim.
+See http://www.vim.org/scripts/script.php?script_id=294 for Align usage.
+See http://www.drchip.org/astronaut/vim/align.html#Examples for Align examples.
+See http://vimcasts.org/episodes/aligning-text-with-tabular-vim/.
+
 1. align columns separeted by spaces
 
 ```
 <leader>tf
 ```
 
-See ~/.vim/plugin/table_format.vim
+2. align on something
 
-2. align on somethings
+a=ok=
+bb=wrong
 
 ```
-:<Align> =
+Align =
 ```
 
-See http://www.vim.org/scripts/script.php?script_id=294
+or 
+
+```
+Tab/=
+```
+
+3. do not align
+
+```
+Tab/:\zs
+```
+
+4. table markup
+
+|start|eat|left|
+|12|5|7|
+
+```
+Tab/|
+```
+
+5. align on text
+
+See http://stackoverflow.com/questions/2129519/align-text-only-on-first-separator-in-vim.
+
+a=b=
+bb=ccc
+
+->
+
+a=   b=
+bb=  ccc
+
+```
+tab /=\zs/
+```
+
+6. align on first separactor only
+
+a=b=
+bb=ccc
+
+->
+
+a  = b=
+ab = ccc
+
+```
+AlignCtrl lp1P1:
+Align =
+```
 
 ### Hexadecimal Edit
 
@@ -32,6 +88,8 @@ Toggle key: <ctrl-h>
 
 In normal mode, type `q/`.
 In command mode, type `<ctrl-f>`.
+
+<CR> to executes.
 
 ### List loaded scripts
   
