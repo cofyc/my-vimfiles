@@ -4,18 +4,19 @@
 > 
 > -- reddy@lion.austin.com
 
-## Notes
-
-### Align columns
+## Align
 
 See http://www.vim.org/scripts/script.php?script_id=294 for Align usage.
 See http://www.drchip.org/astronaut/vim/align.html#Examples for Align examples.
 See http://vimcasts.org/episodes/aligning-text-with-tabular-vim/.
 
-#### align columns separeted by spaces
+#### shortcuts
 
 ```
-<leader>t<sep>
+<leader>t=
+<leader>t
+<leader>tsp # space
+...
 ```
 
 #### align on provided separator
@@ -85,18 +86,26 @@ or
 Align! lp1P1: =
 ```
 
-### Hexadecimal Edit
+or
+
+```
+<leader>tf=
+<leader>tf=>
+<leader>tf:
+```
+
+## Hexadecimal Edit
 
 Toggle key: <ctrl-h>
 
-### Regular buffer style command line edit
+## Regular buffer style command line edit
 
 In normal mode, type `q/`.
 In command mode, type `<ctrl-f>`.
 
 <CR> to executes.
 
-### List loaded scripts
+## List loaded scripts
   
 http://vim.wikia.com/wiki/List_loaded_scripts
 
