@@ -272,6 +272,7 @@ vnoremap <silent> <expr> p <sid>Repl()
 au BufRead,BufNewFile *.pl :set tw=79
 au BufRead,BufNewFile *.c :set tw=79
 au BufRead,BufNewFile *.erl :set tw=79
+au BufRead,BufNewFile *.md :set tw=79
 
 " Redefine iskeyword, (Perl6 use dash)
 au BufRead,BufNewFile *.pl :set iskeyword=@,48-57,_,192-255,#,-
