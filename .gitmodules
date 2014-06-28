@@ -31,9 +31,6 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/godef"]
-	path = vim/bundle/godef
-	url = https://github.com/dgryski/vim-godef
 [submodule "vim/bundle/arduino"]
 	path = vim/bundle/arduino
 	url = https://github.com/kingbin/vim-arduino.git
