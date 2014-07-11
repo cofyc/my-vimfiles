@@ -339,6 +339,8 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
+" vim-go
+let g:go_disable_autoinstall = 1
 
 " align
 " align on first separator only
