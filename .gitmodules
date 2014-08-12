@@ -49,3 +49,6 @@
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "vim/bundle/PreserveNoEOL"]
+	path = vim/bundle/PreserveNoEOL
+	url = https://github.com/vim-scripts/PreserveNoEOL.git

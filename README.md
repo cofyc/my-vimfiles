@@ -90,7 +90,7 @@ or
 
 ```
 <leader>tf=
-<leader>tf=>
+<leader>tf>=
 <leader>tf:
 ```
 

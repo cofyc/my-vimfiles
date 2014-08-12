@@ -52,7 +52,8 @@ set showmatch
 set mat=2
 set hlsearch
 set laststatus=2
-set statusline=%F%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c\ \ Cwd:\ %{getcwd()}
+"set statusline=%F%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c\ \ Cwd:\ %{getcwd()}
+set statusline=%t%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c
 set nobackup
 set nowb
 set noswapfile
@@ -273,6 +274,7 @@ au BufRead,BufNewFile *.pl :set tw=79
 au BufRead,BufNewFile *.c :set tw=79
 au BufRead,BufNewFile *.erl :set tw=79
 au BufRead,BufNewFile *.md :set tw=79
+au BufRead,BufNewFile *.sh :set tw=79
 
 " Redefine iskeyword, (Perl6 use dash)
 au BufRead,BufNewFile *.pl :set iskeyword=@,48-57,_,192-255,#,-
@@ -286,7 +288,10 @@ let g:tagbar_sort = 0
 call pathogen#infect()
 
 " No end of line on last line
+" Add end of line at end: :set binary :set eol
+" Remove end of line at end: :set binary :set noeol
 "au BufWritePre * :set binary | set noeol
+"au BufWritePre *.php :set noeol
 "au BufWritePost * :set nobinary | set eol
 
 " Create parent directories on save.
@@ -345,5 +350,6 @@ let g:go_disable_autoinstall = 1
 " align
 " align on first separator only
 map <leader>tf= :Align! lp1P1: =<CR>
-map <leader>tf=> :Align! lp1P1: =><CR>
+" we use pp instead of =>
+map <leader>tfpp :Align! lp1P1: =><CR>
 map <leader>tf: :Align! lp1P1: :<CR>
