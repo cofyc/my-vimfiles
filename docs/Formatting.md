@@ -1,0 +1,7 @@
+# Formatting
+
+## XML
+
+```
+:XmlFmt
+```
