@@ -119,6 +119,9 @@ command! XmlFmt set ft=xml | execute "%!xmllint --format -"
 " Cmd: HtmlFmt
 command! HtmlFmt set ft=html | execute "%!tidy -q -i -asxhtml 2>/dev/null"
 
+" Cmd: JsonFmt
+command! JsonFmt set ft=json | execute "%!python -m json.tool"
+
 " Windows
 set wmh=0
 

@@ -5,3 +5,15 @@
 ```
 :XmlFmt
 ```
+
+## HTML
+
+```
+:HtmlFmt
+```
+
+## JSON
+
+```
+:JsonFmt
+```
