@@ -285,6 +285,7 @@ let g:tagbar_left = 1
 let g:tagbar_sort = 0
 
 " Pathogen, install plugins/scripts in private directories.
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 " No end of line on last line

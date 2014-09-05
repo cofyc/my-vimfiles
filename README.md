@@ -4,10 +4,6 @@
 > 
 > -- reddy@lion.austin.com
 
-## List loaded scripts
-  
-http://vim.wikia.com/wiki/List_loaded_scripts
-
 ## Plugins
 
 See `git submodules` for most plugins.
