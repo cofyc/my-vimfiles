@@ -17,3 +17,9 @@
 ```
 :JsonFmt
 ```
+
+## JavaScript
+
+```
+:call JsBeautify()
+```
