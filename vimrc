@@ -357,3 +357,6 @@ map <leader>tf= :Align! lp1P1: =<CR>
 " we use pp instead of =>
 map <leader>tfpp :Align! lp1P1: =><CR>
 map <leader>tf: :Align! lp1P1: :<CR>
+
+" PreserveNoEOL
+let g:PreserveNoEOL = 1
