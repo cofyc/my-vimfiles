@@ -24,12 +24,6 @@ filetype indent on
 " Set mapleader
 let mapleader = ","
 
-" Fast Reloading RC File
-map <leader>s :source ~/.vimrc<CR>
-
-" Fast Editing RC File
-map <leader>e :sp ~/.vimrc<CR>
-
 " Syntax Highlight
 syntax on
 
@@ -351,12 +345,41 @@ let g:tagbar_type_go = {
 " vim-go
 let g:go_disable_autoinstall = 1
 
-" align
+""" Align """
+
 " align on first separator only
 map <leader>tf= :Align! lp1P1: =<CR>
 " we use pp instead of =>
-map <leader>tfpp :Align! lp1P1: =><CR>
+map <leader>tfpp :Align! lp1P1: =><CR> 
 map <leader>tf: :Align! lp1P1: :<CR>
+
+""" Tabularize """
+" http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+if exists(":Tabularize")
+  nmap <leader>a= :Tabularize /=<CR>
+  vmap <leader>a= :Tabularize /=<CR>
+  nmap <leader>a: :Tabularize /:\zs<CR>
+  vmap <leader>a: :Tabularize /:\zs<CR>
+  nmap <leader>a| :Tabularize /|<CR>
+  vmap <leader>a| :Tabularize /|<CR>
+endif
+
+" Call :Tabularize command each time you insert a | character.
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
+
+""" EasyAlign """
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
 
 " PreserveNoEOL
 let g:PreserveNoEOL = 1
