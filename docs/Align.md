@@ -25,7 +25,7 @@ a=ok=
 bb=wrong
 
 ```
-Align =
+:Align =
 ```
 
 or 
@@ -86,6 +86,14 @@ or
 <leader>tf:
 ```
 
+## align end of line comments
+
+```
+:Tab /\/\/ # align `//` comments
+:Tab /\/\* # align `/*` comments
+:Tab /# # align `#` comments
+```
+
 ## align on nth separator
 
 ```
@@ -93,12 +101,4 @@ or
 <Enter>*<Space> # all
 <Enter>-<Space> # last
 <Enter>-2<Space> # the second to the last
-```
-
-## align end of line comments
-
-```
-:Tab /\/\/ # align `//` comments
-:Tab /\/\* # align `/*` comments
-:Tab /# # align `#` comments
 ```

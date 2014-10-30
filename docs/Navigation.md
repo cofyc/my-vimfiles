@@ -81,3 +81,8 @@ that you last edit
 ``{x}`: go to bookmark named `{x}`
 
 ``.`: go to the line that you last edit
+
+## Jump
+
+`<C-O>`: go to older cursor position in jump list
+`<C-I>`: go to newer cursor position in jump list
