@@ -74,3 +74,6 @@
 [submodule "vim/bundle/vim-windowswap"]
 	path = vim/bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap.git
+[submodule "vim/bundle/vim-haproxy"]
+	path = vim/bundle/vim-haproxy
+	url = https://github.com/vim-scripts/haproxy

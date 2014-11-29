@@ -383,3 +383,13 @@ vmap <Enter> <Plug>(EasyAlign)
 
 " PreserveNoEOL
 let g:PreserveNoEOL = 1
+
+" modeline
+set modelines=5
+
+" spell check
+set spelllang=en_us
+set spellfile=~/.vim/spell/en.utf-8.add
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+set complete+=kspell
