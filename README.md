@@ -4,7 +4,7 @@
 > 
 > -- reddy@lion.austin.com
 
-## Plugins
+## Plugin
 
 See `git submodules` for most plugins.
 
