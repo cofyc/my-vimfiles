@@ -77,3 +77,6 @@
 [submodule "vim/bundle/vim-haproxy"]
 	path = vim/bundle/vim-haproxy
 	url = https://github.com/vim-scripts/haproxy
+[submodule "vim/bundle/vim-abolish"]
+	path = vim/bundle/vim-abolish
+	url = git@github.com:tpope/vim-abolish.git

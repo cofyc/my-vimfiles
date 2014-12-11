@@ -344,6 +344,8 @@ let g:tagbar_type_go = {
     \ }
 " vim-go
 let g:go_disable_autoinstall = 1
+let g:go_fmt_command = "goimports"
+let g:go_fmt_autosave = 0 " too slow
 
 """ Align """
 
