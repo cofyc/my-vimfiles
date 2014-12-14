@@ -80,3 +80,6 @@
 [submodule "vim/bundle/vim-abolish"]
 	path = vim/bundle/vim-abolish
 	url = git@github.com:tpope/vim-abolish.git
+[submodule "vim/bundle/keepcase"]
+	path = vim/bundle/keepcase
+	url = git@github.com:vim-scripts/keepcase.vim.git
