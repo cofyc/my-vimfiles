@@ -343,6 +343,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=7
 " go
 au BufRead,BufNewFile *.go set noexpandtab
 au FileType go au BufWritePre <buffer> Fmt
+au BufNewFile,BufRead *.goc setf c
 " vim-go
 let g:go_disable_autoinstall = 1
 let g:go_fmt_command = "goimports"
@@ -396,3 +397,11 @@ set spellfile=~/.vim/spell/en.utf-8.add
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
 set complete+=kspell
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+"" Open a NERDTree automatically when vim starts up if no files were specified.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

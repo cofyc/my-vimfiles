@@ -4,12 +4,14 @@
 [submodule "vim/bundle/taglist"]
 	path = vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
+    ignore = dirty
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
 [submodule "vim/bundle/jshint"]
 	path = vim/bundle/jshint
 	url = git://github.com/walm/jshint.vim.git
+    ignore = dirty
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -43,6 +45,7 @@
 [submodule "vim/bundle/Align"]
 	path = vim/bundle/Align
 	url = git@github.com:vim-scripts/Align.git
+    ignore = dirty
 [submodule "vim/bundle/emmet-vim"]
 	path = vim/bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
@@ -52,6 +55,7 @@
 [submodule "vim/bundle/PreserveNoEOL"]
 	path = vim/bundle/PreserveNoEOL
 	url = https://github.com/vim-scripts/PreserveNoEOL.git
+    ignore = dirty
 [submodule "vim/bundle/vim-json"]
 	path = vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
@@ -86,3 +90,37 @@
 [submodule "vim/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim/bundle/code_complete"]
+	path = vim/bundle/code_complete
+	url = git@github.com:mbbill/code_complete.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "vim/bundle/matchit"]
+	path = vim/bundle/matchit
+	url = git@github.com:vim-scripts/matchit.zip.git
+    ignore = dirty
+[submodule "vim/bundle/vim-cobj"]
+	path = vim/bundle/vim-cobj
+	url = git@github.com:Cofyc/vim-cobj.git
+[submodule "vim/bundle/vim-perl"]
+	path = vim/bundle/vim-perl
+	url = git@github.com:vim-perl/vim-perl.git
+[submodule "vim/bundle/xml.vim"]
+	path = vim/bundle/xml.vim
+	url = git@github.com:othree/xml.vim.git
+[submodule "vim/bundle/applescript"]
+	path = vim/bundle/applescript
+	url = git@github.com:vim-scripts/applescript.vim.git
+[submodule "vim/bundle/vim2hs"]
+	path = vim/bundle/vim2hs
+	url = git@github.com:dag/vim2hs.git
+[submodule "vim/bundle/nginx"]
+	path = vim/bundle/nginx
+	url = git@github.com:vim-scripts/nginx.vim.git
+[submodule "vim/bundle/vcl-vim-plugin"]
+	path = vim/bundle/vcl-vim-plugin
+	url = git@github.com:smerrill/vcl-vim-plugin.git
+[submodule "vim/bundle/neocomplete"]
+	path = vim/bundle/neocomplete
+	url = git@github.com:Shougo/neocomplete.vim.git
