@@ -83,3 +83,6 @@
 [submodule "vim/bundle/keepcase"]
 	path = vim/bundle/keepcase
 	url = git@github.com:vim-scripts/keepcase.vim.git
+[submodule "vim/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
