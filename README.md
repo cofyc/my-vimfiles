@@ -14,3 +14,4 @@ See `git submodules` for most plugins.
 - Vim wiki: http://vim.wikia.com/wiki/Category:Getting_started
 - Vim structure: http://www.22ideastreet.com/debug/vim-directory-structure/
 - A good collection of vim configs: https://github.com/liangxianzhe/dotvim
+- A good collection of vim files: https://github.com/scrooloose/vimfiles/

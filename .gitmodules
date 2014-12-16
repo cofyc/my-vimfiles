@@ -109,6 +109,7 @@
 [submodule "vim/bundle/xml.vim"]
 	path = vim/bundle/xml.vim
 	url = git@github.com:othree/xml.vim.git
+    ignore = dirty
 [submodule "vim/bundle/applescript"]
 	path = vim/bundle/applescript
 	url = git@github.com:vim-scripts/applescript.vim.git
@@ -124,3 +125,9 @@
 [submodule "vim/bundle/neocomplete"]
 	path = vim/bundle/neocomplete
 	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "vim/bundle/a.vim"]
+	path = vim/bundle/a.vim
+	url = git@github.com:vim-scripts/a.vim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
