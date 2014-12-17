@@ -49,10 +49,12 @@ set laststatus=2
 "set statusline=%F%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c\ \ Cwd:\ %{getcwd()}
 set statusline=%t%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c
 set nobackup
-set nowb
+set nowritebackup
 set noswapfile
-set nofen
-set fdl=0
+
+" Folding
+set foldenable
+set foldlevel=0
 
 " Tabs
 set tabstop=4
