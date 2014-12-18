@@ -412,3 +412,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:NERDCustomDelimiters = {
     \ 'sshconfig': { 'left': '#' }
     \ }
+
+" JSON
+let g:vim_json_syntax_conceal = 0

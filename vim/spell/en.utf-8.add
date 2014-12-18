@@ -90,3 +90,4 @@ plugin
 Auth
 Ldap
 nginx
+cli
