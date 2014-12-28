@@ -410,8 +410,20 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " NERDCommenter
 let g:NERDCustomDelimiters = {
-    \ 'sshconfig': { 'left': '#' }
+    \ 'sshconfig': { 'left': '#' },
+    \ 'haproxy': { 'left': '#' }
     \ }
+let g:NERDSpaceDelims = 1
+map <C-C> <leader>c<space>
+imap <C-C> <ESC><leader>c<space>i
 
 " JSON
 let g:vim_json_syntax_conceal = 0
+
+" Completion
+" set completeopt=menu,preview,longest
+
+" VOoM
+" if &filetype == "markdown"
+" nnoremap <silent> <F9> :VoomToggle <CR>
+" end
