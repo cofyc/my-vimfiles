@@ -424,6 +424,11 @@ let g:vim_json_syntax_conceal = 0
 " set completeopt=menu,preview,longest
 
 " VOoM
-" if &filetype == "markdown"
-" nnoremap <silent> <F9> :VoomToggle <CR>
-" end
+function ToggleOutLiner(type)
+    if a:type == "markdown"
+        VoomToggle markdown
+    else
+        VoomToggle markdown
+    endif
+endfunction
+nnoremap <silent> <F9> :call ToggleOutLiner(&l:filetype)<CR>

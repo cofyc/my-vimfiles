@@ -131,3 +131,6 @@
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/bundle/vim-tex-syntax"]
+	path = vim/bundle/vim-tex-syntax
+	url = git@github.com:gi1242/vim-tex-syntax.git
