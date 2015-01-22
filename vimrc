@@ -20,6 +20,7 @@ set history=1000
 filetype on
 filetype plugin on
 filetype indent on
+let g:c_syntax_for_h = 1
 
 " Set mapleader
 let mapleader = ","
@@ -449,49 +450,7 @@ autocmd FileType css vnoremap <buffer> <c-f> :call RangeCSSBeautify()<cr>
 " :<C-u>ClangFormat<CR>
 "autocmd FileType c,cpp,objc vnoremap <buffer> <Leader>f :!clang-format<CR>
 
-" format with uncrusitfy
-" http://stackoverflow.com/a/15513829/288089
-" Restore cursor position, window position, and last search after running a
-" command.
-function! Preserve(command)
-  " Save the last search.
-  let search = @/
-
-  " Save the current cursor position.
-  let cursor_position = getpos('.')
-
-  " Save the current window position.
-  normal! H
-  let window_position = getpos('.')
-  call setpos('.', cursor_position)
-
-  " Execute the command.
-  execute a:command
-
-  " Restore the last search.
-  let @/ = search
-
-  " Restore the previous window position.
-  call setpos('.', window_position)
-  normal! zt
-
-  " Restore the previous cursor position.
-  call setpos('.', cursor_position)
-endfunction
-
-" Specify path to your Uncrustify configuration file.
-let g:uncrustify_cfg_file_path =
-    \ shellescape(fnamemodify('~/.uncrustify.cfg', ':p'))
-
-" Don't forget to add Uncrustify executable to $PATH (on Unix) or 
-" %PATH% (on Windows) for this command to work.
-function! Uncrustify(language)
-  call Preserve(':silent %!uncrustify'
-      \ . ' -q '
-      \ . ' -l ' . a:language
-      \ . ' -c ' . g:uncrustify_cfg_file_path)
-endfunction
-autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
-autocmd FileType c vnoremap <buffer> <leader>f :call Uncrustify('c')<CR>
-autocmd FileType cpp noremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
-autocmd FileType cpp vnoremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
+autocmd FileType c noremap <buffer> <c-f> :call Uncrustify('c')<CR>
+autocmd FileType c vnoremap <buffer> <c-f> :call RangeUncrustify('c')<CR>
+autocmd FileType cpp noremap <buffer> <c-f> :call Uncrustify('cpp')<CR>
+autocmd FileType cpp vnoremap <buffer> <c-f> :call RangeUncrustify('cpp')<CR>

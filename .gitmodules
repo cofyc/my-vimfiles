@@ -134,3 +134,6 @@
 [submodule "vim/bundle/vim-tex-syntax"]
 	path = vim/bundle/vim-tex-syntax
 	url = git@github.com:gi1242/vim-tex-syntax.git
+[submodule "vim/bundle/vim-uncrustify"]
+	path = vim/bundle/vim-uncrustify
+	url = git@github.com:Cofyc/vim-uncrustify.git
