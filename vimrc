@@ -435,22 +435,22 @@ endfunction
 nnoremap <silent> <F9> :call ToggleOutLiner(&l:filetype)<CR>
 
 """ formatting
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer> <leader>f :call JsBeautify()<cr>
 " for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType html noremap <buffer> <leader>f :call HtmlBeautify()<cr>
 " for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+autocmd FileType css noremap <buffer> <leader>f :call CSSBeautify()<cr>
 " formatting/range
-autocmd FileType javascript vnoremap <buffer>  <c-f> :call RangeJsBeautify()<cr>
-autocmd FileType html vnoremap <buffer> <c-f> :call RangeHtmlBeautify()<cr>
-autocmd FileType css vnoremap <buffer> <c-f> :call RangeCSSBeautify()<cr>
+autocmd FileType javascript vnoremap <buffer> <leader>f :call RangeJsBeautify()<cr>
+autocmd FileType html vnoremap <buffer> <leader>f :call RangeHtmlBeautify()<cr>
+autocmd FileType css vnoremap <buffer> <leader>f :call RangeCSSBeautify()<cr>
 " format with clang-format
 " map to <Leader>cf in C++ code
 "autocmd FileType c,cpp,objc noremap <buffer> <Leader>f :%!clang-format<CR>
 " :<C-u>ClangFormat<CR>
 "autocmd FileType c,cpp,objc vnoremap <buffer> <Leader>f :!clang-format<CR>
 
-autocmd FileType c noremap <buffer> <c-f> :call Uncrustify('c')<CR>
-autocmd FileType c vnoremap <buffer> <c-f> :call RangeUncrustify('c')<CR>
-autocmd FileType cpp noremap <buffer> <c-f> :call Uncrustify('cpp')<CR>
-autocmd FileType cpp vnoremap <buffer> <c-f> :call RangeUncrustify('cpp')<CR>
+autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
+autocmd FileType c vnoremap <buffer> <leader>f :call RangeUncrustify('c')<CR>
+autocmd FileType cpp noremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
+autocmd FileType cpp vnoremap <buffer> <leader>f :call RangeUncrustify('cpp')<CR>
