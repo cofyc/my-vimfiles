@@ -96,8 +96,7 @@ map <leader>x :s/\v([^, (){}\[\]]*)([, ]\s*)([^, (){}\[\]]*)/\3\2\1/<CR> :nohlse
 " Remove Trailing Spaces
 function! RemoveTrailingSpaces()
     silent! %s/\v\s+$//
-    ''
-    echo "Trailing spaces removed."
+    echom "Trailing spaces removed."
 endfunction
 map <leader>r :call RemoveTrailingSpaces()<CR>
 
@@ -395,9 +394,10 @@ let g:PreserveNoEOL = 1
 set modelines=5
 
 " spell check
+set nospell " default off
 set spelllang=en_us
 set spellfile=~/.vim/spell/en.utf-8.add
-autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.cpp,*.c,*.h setlocal spell
 autocmd FileType gitcommit setlocal spell
 set complete+=kspell
 
