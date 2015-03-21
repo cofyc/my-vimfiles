@@ -137,3 +137,27 @@
 [submodule "vim/bundle/puppet"]
 	path = vim/bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+[submodule "vim/bundle/vim-autopep8"]
+	path = vim/bundle/vim-autopep8
+	url = git@github.com:tell-k/vim-autopep8.git
+[submodule "vim/bundle/vim-template"]
+	path = vim/bundle/vim-template
+	url = git://github.com/aperezdc/vim-template.git
+[submodule "vim/bundle/tlib_vim"]
+	path = vim/bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "vim/bundle/vim-addon-mv-utils"]
+	path = vim/bundle/vim-addon-mv-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/bundle/vim-snipmate"]
+	path = vim/bundle/vim-snipmate
+	url = git@github.com:garbas/vim-snipmate.git
+[submodule "vim/bundle/Vundle"]
+	path = vim/bundle/Vundle
+	url = https://github.com/gmarik/Vundle.vim.git

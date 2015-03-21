@@ -74,7 +74,6 @@ set cino=:0
 iab xdate <C-R>=strftime("Date: %a %b %d %H:%M:%S %Y %z")<CR>
 iab xdate1 <C-R>=strftime("%d %b %Y")<CR>
 iab xauthor Author: Yecheng Fu <cofyc.jackson@gmail.com>
-iab xcpyr Copyright (C) Yecheng Fu <cofyc.jackson at gmail dot com>
 iab xnick Cofyc
 iab xname Yecheng
 iab xfname Yecheng Fu
@@ -313,6 +312,7 @@ let g:tagbar_type_go = {
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+let g:pathogen_disabled = ['vim-snipmate', 'Vundle', 'neocomplete', 'code_complete']
 call pathogen#infect()
 
 " No end of line on last line
@@ -454,3 +454,19 @@ autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
 autocmd FileType c vnoremap <buffer> <leader>f :call RangeUncrustify('c')<CR>
 autocmd FileType cpp noremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
 autocmd FileType cpp vnoremap <buffer> <leader>f :call RangeUncrustify('cpp')<CR>
+" https://github.com/tell-k/vim-autopep8
+let g:autopep8_disable_show_diff=1
+autocmd FileType python noremap <buffer> <leader>f :call Autopep8()<CR>
+autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
+
+" vim-template
+let g:templates_directory = '~/.vim/templates'
+
+" ultisnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<tab>"
+" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"

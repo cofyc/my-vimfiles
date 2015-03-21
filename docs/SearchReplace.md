@@ -20,6 +20,17 @@ do with
 :'<,'>SubstituteCase/\chello/goodbye/g
 ```
 
+## Substitution all case variants
+
+```
+facility
+FACILITY
+```
+
+:%S/facility/building/g
+
+
 ## References
 
 - http://vim.wikia.com/wiki/Search_and_replace
+- https://github.com/tpope/vim-abolish
