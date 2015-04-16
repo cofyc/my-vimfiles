@@ -70,6 +70,11 @@ set smartindent
 set cindent
 set cino=:0
 
+" Pathogen, install plugins/scripts in private directories.
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+let g:pathogen_disabled = ['vim-snipmate', 'Vundle', 'neocomplete', 'code_complete', 'xml.vim']
+call pathogen#infect()
+
 " Abbreviations
 iab xdate <C-R>=strftime("Date: %a %b %d %H:%M:%S %Y %z")<CR>
 iab xdate1 <C-R>=strftime("%d %b %Y")<CR>
@@ -119,9 +124,6 @@ command! JsonFmt set ft=json | execute "%!python -m json.tool"
 
 " Windows
 set wmh=0
-
-" Plugins
-runtime! ftplugin/man.vim
 
 " Plugins: Taglist
 let Tlist_File_Fold_Auto_Close = 1
@@ -309,11 +311,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
-
-" Pathogen, install plugins/scripts in private directories.
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ['vim-snipmate', 'Vundle', 'neocomplete', 'code_complete']
-call pathogen#infect()
 
 " No end of line on last line
 " Add end of line at end: :set binary :set eol

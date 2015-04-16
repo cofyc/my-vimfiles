@@ -134,9 +134,6 @@
 [submodule "vim/bundle/vim-uncrustify"]
 	path = vim/bundle/vim-uncrustify
 	url = git@github.com:Cofyc/vim-uncrustify.git
-[submodule "vim/bundle/puppet"]
-	path = vim/bundle/puppet
-	url = git://github.com/rodjek/vim-puppet.git
 [submodule "vim/bundle/vim-autopep8"]
 	path = vim/bundle/vim-autopep8
 	url = git@github.com:tell-k/vim-autopep8.git

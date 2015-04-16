@@ -8,6 +8,10 @@
 
 See `git submodules` for most plugins.
 
+## Notes
+
+- VOoM: does not support python3
+
 ## References
 
 - Vim documentation: http://vimdoc.sourceforge.net/

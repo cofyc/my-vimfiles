@@ -29,6 +29,11 @@ FACILITY
 
 :%S/facility/building/g
 
+## Disable magic (regex, etc)
+
+```
+:%sno/raw_search_string/raw_replace_string/g
+```
 
 ## References
 
