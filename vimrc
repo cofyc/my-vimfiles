@@ -341,7 +341,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=7
 
 " go
 au BufRead,BufNewFile *.go set noexpandtab
-au FileType go au BufWritePre <buffer> Fmt
+"au FileType go au BufWritePre <buffer> Fmt
 au BufNewFile,BufRead *.goc setf c
 " vim-go
 let g:go_disable_autoinstall = 1
@@ -455,7 +455,9 @@ autocmd FileType cpp vnoremap <buffer> <leader>f :call RangeUncrustify('cpp')<CR
 let g:autopep8_disable_show_diff=1
 autocmd FileType python noremap <buffer> <leader>f :call Autopep8()<CR>
 autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
-
+" go
+autocmd FileType go noremap <buffer> <leader>f :Fmt<CR>
+autocmd FileType go vnoremap <buffer> <leader>f :Fmt<CR>
 " vim-template
 let g:templates_directory = '~/.vim/templates'
 

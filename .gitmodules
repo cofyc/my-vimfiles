@@ -158,3 +158,6 @@
 [submodule "vim/bundle/Vundle"]
 	path = vim/bundle/Vundle
 	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "vim/bundle/puppet"]
+	path = vim/bundle/puppet
+	url = https://github.com/puppetlabs/puppet-syntax-vim.git
