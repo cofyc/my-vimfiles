@@ -161,3 +161,6 @@
 [submodule "vim/bundle/puppet"]
 	path = vim/bundle/puppet
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
+[submodule "vim/bundle/csv"]
+	path = vim/bundle/csv
+	url = https://github.com/chrisbra/csv.vim
