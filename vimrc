@@ -48,7 +48,7 @@ set mat=2
 set hlsearch
 set laststatus=2
 "set statusline=%F%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c\ \ Cwd:\ %{getcwd()}
-set statusline=%t%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c
+set statusline=%F%m%r%h%w%y[%{&fileencoding}][%{&ff}]\ \ Line:\ %l/%L\ \ Col:\ %c
 set nobackup
 set nowritebackup
 set noswapfile
