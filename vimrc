@@ -67,12 +67,11 @@ set expandtab
 " Indent
 set autoindent
 set smartindent
-set cindent
-set cino=:0
+set breakindent
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ['vim-snipmate', 'Vundle', 'neocomplete', 'code_complete', 'xml.vim']
+let g:pathogen_disabled = ['vim-snipmate', 'Vundle', 'neocomplete', 'code_complete', 'xml.vim', 'csv']
 call pathogen#infect()
 
 " Abbreviations
@@ -456,8 +455,8 @@ let g:autopep8_disable_show_diff=1
 autocmd FileType python noremap <buffer> <leader>f :call Autopep8()<CR>
 autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
 " go
-autocmd FileType go noremap <buffer> <leader>f :Fmt<CR>
-autocmd FileType go vnoremap <buffer> <leader>f :Fmt<CR>
+autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR>
+autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR>
 " vim-template
 let g:templates_directory = '~/.vim/templates'
 

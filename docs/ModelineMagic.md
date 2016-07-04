@@ -1,4 +1,7 @@
 # Modeline Magic
+#
+# vim: ft=markdown et ts=4 sw=4
+# 
 
 http://vim.wikia.com/wiki/Modeline_magic
 
@@ -15,5 +18,5 @@ invalid:
 
 
 ```
-// vim: ft=cpp
+// vim: ft=markdown
 ```

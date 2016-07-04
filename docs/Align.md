@@ -1,15 +1,5 @@
 # Align
 
-## Plugins
-
-- tabular
-  - http://vimcasts.org/episodes/aligning-text-with-tabular-vim/.
-  - format: `:Tab /<pattern>`
-- Align
-  - http://www.drchip.org/astronaut/vim/align.html#Examples for Align examples.
-  - http://www.vim.org/scripts/script.php?script_id=294 for Align usage.
-- vim-easy-align
-
 ## shortcuts
 
 ```
@@ -97,8 +87,19 @@ or
 ## align on nth separator
 
 ```
+# vim-easy-align
 <Enter>2<Space> # 2nd
 <Enter>*<Space> # all
 <Enter>-<Space> # last
 <Enter>-2<Space> # the second to the last
 ```
+
+## Plugins
+
+- tabular
+  - http://vimcasts.org/episodes/aligning-text-with-tabular-vim/.
+  - format: `:Tab /<pattern>`
+- Align
+  - http://www.drchip.org/astronaut/vim/align.html#Examples for Align examples.
+  - http://www.vim.org/scripts/script.php?script_id=294 for Align usage.
+- vim-easy-align: https://github.com/junegunn/vim-easy-align
