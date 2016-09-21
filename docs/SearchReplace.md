@@ -1,5 +1,14 @@
 # Search Replace
 
+## case sensitivity
+
+```vim
+/\ccopyright # case insensitive
+/\Ccopyright # case sensitive
+```
+
+See http://stackoverflow.com/a/2287449/288089.
+
 ## Disable search highlights
 
 ```vim

@@ -1,0 +1,49 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.8.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'search',
+1 verbose cli   'yaml' ]
+2 info using npm@3.7.3
+3 info using node@v5.8.0
+4 silly mapToRegistry name -/all
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npm.taobao.org/
+7 silly mapToRegistry uri https://registry.npm.taobao.org/-/all
+8 info updateIndex /Users/cofyc/.npm/registry.npm.taobao.org/-/all/.cache.json
+9 verbose correctMkdir /Users/cofyc/.npm correctMkdir not in flight; initializing
+10 warn Building the local index for the first time, please be patient
+11 silly update-index fetching https://registry.npm.taobao.org/-/all
+12 verbose request uri https://registry.npm.taobao.org/-/all
+13 verbose request no auth needed
+14 info attempt registry request try #1 at 11:13:12 AM
+15 verbose request id fd243b99022fd007
+16 http request GET https://registry.npm.taobao.org/-/all
+17 http 200 https://registry.npm.taobao.org/-/all
+18 verbose headers { date: 'Wed, 13 Jul 2016 03:13:16 GMT',
+18 verbose headers   'content-type': 'application/json; charset=utf-8',
+18 verbose headers   'content-length': '6906869',
+18 verbose headers   connection: 'keep-alive',
+18 verbose headers   etag: '"6963f5-nMSLpDPevG+T46ugBjbXUg"',
+18 verbose headers   'x-readtime': '4189' }
+19 verbose stack Error: true true: -/all
+19 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+19 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+19 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+19 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+19 verbose stack     at emitTwo (events.js:100:13)
+19 verbose stack     at Request.emit (events.js:185:7)
+19 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+19 verbose stack     at emitOne (events.js:95:20)
+19 verbose stack     at Request.emit (events.js:182:7)
+19 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+20 verbose statusCode 200
+21 verbose cwd /Volumes/Studio/my-vimfiles
+22 error Darwin 15.0.0
+23 error argv "/usr/local/Cellar/node/5.8.0/bin/node" "/usr/local/bin/npm" "search" "yaml"
+24 error node v5.8.0
+25 error npm  v3.7.3
+26 error code E200
+27 error true true: -/all
+28 error If you need help, you may report this error at:
+28 error     <https://github.com/npm/npm/issues>
+29 verbose exit [ 1, true ]
