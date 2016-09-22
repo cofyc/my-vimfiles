@@ -459,6 +459,7 @@ autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR>
 autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR>
 " vim-template
 let g:templates_directory = '~/.vim/templates'
+let g:templates_no_builtin_templates = 1
 
 " ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
