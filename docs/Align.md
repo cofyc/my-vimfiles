@@ -96,10 +96,10 @@ or
 
 ## Plugins
 
+- vim-easy-align: https://github.com/junegunn/vim-easy-align
 - tabular
   - http://vimcasts.org/episodes/aligning-text-with-tabular-vim/.
   - format: `:Tab /<pattern>`
 - Align
   - http://www.drchip.org/astronaut/vim/align.html#Examples for Align examples.
   - http://www.vim.org/scripts/script.php?script_id=294 for Align usage.
-- vim-easy-align: https://github.com/junegunn/vim-easy-align

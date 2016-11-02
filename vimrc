@@ -273,7 +273,7 @@ au BufRead,BufNewFile *.pl :set tw=79
 au BufRead,BufNewFile *.c :set tw=79
 au BufRead,BufNewFile *.erl :set tw=79
 au BufRead,BufNewFile *.md :set tw=79
-au BufRead,BufNewFile *.sh :set tw=79
+"au BufRead,BufNewFile *.sh :set tw=79
 
 " Redefine iskeyword, (Perl6 use dash)
 au BufRead,BufNewFile *.pl :set iskeyword=@,48-57,_,192-255,#,-
@@ -346,6 +346,7 @@ au BufNewFile,BufRead *.goc setf c
 let g:go_disable_autoinstall = 1
 let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 0 " too slow
+let g:go_asmfmt_autosave = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
@@ -400,9 +401,9 @@ set modelines=5
 
 " spell check
 set nospell " default off
-set spelllang=en_us
+set spelllang=en_us,cjk
 set spellfile=~/.vim/spell/en.utf-8.add
-autocmd BufRead,BufNewFile *.cpp,*.c,*.h setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
 set complete+=kspell
 
@@ -428,6 +429,7 @@ let g:vim_json_syntax_conceal = 0
 
 " Completion
 " set completeopt=menu,preview,longest
+set completeopt=menu
 
 " VOoM
 function ToggleOutLiner(type)
@@ -449,23 +451,23 @@ autocmd FileType css noremap <buffer> <leader>f :call CSSBeautify()<cr>
 autocmd FileType javascript vnoremap <buffer> <leader>f :call RangeJsBeautify()<cr>
 autocmd FileType html vnoremap <buffer> <leader>f :call RangeHtmlBeautify()<cr>
 autocmd FileType css vnoremap <buffer> <leader>f :call RangeCSSBeautify()<cr>
-" format with clang-format
-" map to <Leader>cf in C++ code
-"autocmd FileType c,cpp,objc noremap <buffer> <Leader>f :%!clang-format<CR>
-" :<C-u>ClangFormat<CR>
-"autocmd FileType c,cpp,objc vnoremap <buffer> <Leader>f :!clang-format<CR>
 
-autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
-autocmd FileType c vnoremap <buffer> <leader>f :call RangeUncrustify('c')<CR>
-autocmd FileType cpp noremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
-autocmd FileType cpp vnoremap <buffer> <leader>f :call RangeUncrustify('cpp')<CR>
+" autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
+" autocmd FileType c vnoremap <buffer> <leader>f :call RangeUncrustify('c')<CR>
+" autocmd FileType cpp noremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
+" autocmd FileType cpp vnoremap <buffer> <leader>f :call RangeUncrustify('cpp')<CR>
+
+let g:clang_format#detect_style_file=1
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>f :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>f :ClangFormat<CR>
+
 " https://github.com/tell-k/vim-autopep8
 let g:autopep8_disable_show_diff=1
 autocmd FileType python noremap <buffer> <leader>f :call Autopep8()<CR>
 autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
-" go
-autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR>
-autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR>
+" go (extra redra! to avoid messing up screen)
+autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
+autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
 " vim-template
 let g:templates_directory = '~/.vim/templates'
 let g:templates_no_builtin_templates = 1
@@ -482,7 +484,7 @@ let g:templates_no_builtin_templates = 1
 
 """ neocomplete
 " Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
+let g:acp_enableAtStartup = 1
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
