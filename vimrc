@@ -452,14 +452,14 @@ autocmd FileType javascript vnoremap <buffer> <leader>f :call RangeJsBeautify()<
 autocmd FileType html vnoremap <buffer> <leader>f :call RangeHtmlBeautify()<cr>
 autocmd FileType css vnoremap <buffer> <leader>f :call RangeCSSBeautify()<cr>
 
-" autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
-" autocmd FileType c vnoremap <buffer> <leader>f :call RangeUncrustify('c')<CR>
+autocmd FileType c noremap <buffer> <leader>f :call Uncrustify('c')<CR>
+autocmd FileType c vnoremap <buffer> <leader>f :call RangeUncrustify('c')<CR>
 " autocmd FileType cpp noremap <buffer> <leader>f :call Uncrustify('cpp')<CR>
 " autocmd FileType cpp vnoremap <buffer> <leader>f :call RangeUncrustify('cpp')<CR>
 
 let g:clang_format#detect_style_file=1
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>f :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>f :ClangFormat<CR>
+autocmd FileType cpp,objc nnoremap <buffer><Leader>f :<C-u>ClangFormat<CR>
+autocmd FileType cpp,objc vnoremap <buffer><Leader>f :ClangFormat<CR>
 
 " https://github.com/tell-k/vim-autopep8
 let g:autopep8_disable_show_diff=1

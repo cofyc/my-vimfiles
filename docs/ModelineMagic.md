@@ -1,9 +1,14 @@
 # Modeline Magic
 #
-# vim: ft=markdown et ts=4 sw=4
+# vim: ft=markdown et sw=8 ts=8
 # 
 
-http://vim.wikia.com/wiki/Modeline_magic
+## Enable modeline
+
+```
+:set modeline
+:set modelines=5
+```
 
 ## Examples
 
@@ -18,5 +23,9 @@ invalid:
 
 
 ```
-// vim: ft=markdown
+/* vim: ft=markdown */
 ```
+
+## References
+
+- http://vim.wikia.com/wiki/Modeline_magic

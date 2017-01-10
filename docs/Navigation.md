@@ -86,3 +86,15 @@ that you last edit
 
 `<C-O>`: go to older cursor position in jump list
 `<C-I>`: go to newer cursor position in jump list
+
+## Navigate files
+
+`Explore`
+
+`Sexplore` - horizontal split
+
+`Vexplore` - vertical split
+
+`CTRL-^`   - Edit the alternate file.  Mostly the alternate file is
+          the previously edited file.  This is a quick way to
+          toggle between two files.

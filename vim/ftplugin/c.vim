@@ -1,2 +1,2 @@
 set tw=80
-setlocal spell
+"setlocal spell
