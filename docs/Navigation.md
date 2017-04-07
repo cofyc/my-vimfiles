@@ -78,9 +78,9 @@ line.
 `m{x}`: make a bookmark named `{x}` at current cursor positiongo to the line
 that you last edit
 
-``{x}`: go to bookmark named `{x}`
+`\`{x}`: go to bookmark named `{x}`
 
-``.`: go to the line that you last edit
+`\`.`: go to the line that you last edit
 
 ## Jump
 

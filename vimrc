@@ -402,6 +402,7 @@ set modelines=5
 " spell check
 set nospell " default off
 set spelllang=en_us,cjk
+set spellcapcheck=  " disable capitalized words check
 set spellfile=~/.vim/spell/en.utf-8.add
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
