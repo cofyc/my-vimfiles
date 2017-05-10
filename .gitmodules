@@ -164,9 +164,9 @@
 [submodule "vim/bundle/csv"]
 	path = vim/bundle/csv
 	url = https://github.com/chrisbra/csv.vim
-[submodule "vim/bundle/vim-sleuth"]
-	path = vim/bundle/vim-sleuth
-	url = git://github.com/tpope/vim-sleuth.git
 [submodule "vim/bundle/vim-clang-format"]
 	path = vim/bundle/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "vim/bundle/typescript-vim"]
+	path = vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
