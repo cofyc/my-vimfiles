@@ -554,3 +554,9 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+" Show spaces in list
+" Run `:set list` to turn on
+" Run `:set nolist` to turn off
+" See docs/ShowSpacesInListMode.md for more infos.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣

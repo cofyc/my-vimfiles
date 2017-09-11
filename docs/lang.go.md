@@ -1,5 +1,10 @@
 # lang/go
 
-## tags with tagbar
+## Go to definition
 
-See https://github.com/jstemmer/gotags.
+`:GoDef` -> `gd` -> `ctrl-]`
+
+## plugins
+
+- https://github.com/fatih/vim-go
+- https://github.com/fatih/vim-go-tutorial
