@@ -1878,3 +1878,6 @@ tzselect
 blktrace
 GPG
 pv
+charsets
+Charset
+encodings

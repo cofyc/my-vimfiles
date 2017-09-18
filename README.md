@@ -10,6 +10,8 @@ See `git submodules` for most plugins.
 
 ## Notes
 
+Requires vim 7.4+, with lua and python supports.
+
 - VOoM: does not support python3
 
 ## References
