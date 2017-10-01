@@ -16,8 +16,6 @@ Requires vim 7.4+, with lua and python supports.
 
 ## References
 
-- Vim documentation: http://vimdoc.sourceforge.net/
+- Vim Documentation: http://vimdoc.sourceforge.net/htmldoc/
 - Vim wiki: http://vim.wikia.com/wiki/Category:Getting_started
 - Vim structure: http://www.22ideastreet.com/debug/vim-directory-structure/
-- A good collection of vim configs: https://github.com/liangxianzhe/dotvim
-- A good collection of vim files: https://github.com/scrooloose/vimfiles/

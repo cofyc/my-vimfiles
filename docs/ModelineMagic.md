@@ -1,6 +1,6 @@
 # Modeline Magic
 #
-# vim: ft=markdown et sw=8 ts=8
+# vim: ft=text et sw=8 ts=8
 # 
 
 ## Enable modeline
