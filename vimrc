@@ -397,6 +397,7 @@ vmap <Enter> <Plug>(EasyAlign)
 let g:PreserveNoEOL = 1
 
 " modeline
+set modeline
 set modelines=5
 
 " spell check
