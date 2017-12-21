@@ -67,7 +67,7 @@
 	url = https://github.com/maksimr/vim-jsbeautify.git
 [submodule "vim/bundle/VOoM"]
 	path = vim/bundle/VOoM
-	url = https://github.com/vim-scripts/VOoM.git
+    url = https://github.com/vim-voom/VOoM.git
     ignore = untracked
 [submodule "vim/bundle/vim-easy-align"]
 	path = vim/bundle/vim-easy-align
