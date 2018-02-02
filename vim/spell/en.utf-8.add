@@ -1943,6 +1943,7 @@ initializers
 initializer
 webhooks
 validators
+<<<<<<< HEAD
 AppleScript
 multiplant
 Punctuations
@@ -1980,3 +1981,11 @@ iscsid
 iscsiadm
 Uncomment
 fileio
+ARCH
+bootstrapper
+preconfigure
+prebind
+prebind
+VolumeName
+suboptimal
+unmounting
