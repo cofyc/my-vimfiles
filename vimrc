@@ -66,8 +66,12 @@ set expandtab
 
 " Indent
 set autoindent
-set smartindent
 set breakindent
+" Only enable smartindent for c-like programming languages, see
+" https://vi.stackexchange.com/a/5591.
+au BufRead,BufNewFile *.c   :set smartindent
+au BufRead,BufNewFile *.cpp :set smartindent
+au BufRead,BufNewFile *.c   :set smartindent 
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
