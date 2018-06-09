@@ -103,10 +103,6 @@
 [submodule "vim/bundle/vim-perl"]
 	path = vim/bundle/vim-perl
 	url = git@github.com:vim-perl/vim-perl.git
-[submodule "vim/bundle/xml.vim"]
-	path = vim/bundle/xml.vim
-	url = git@github.com:othree/xml.vim.git
-    ignore = dirty
 [submodule "vim/bundle/applescript"]
 	path = vim/bundle/applescript
 	url = git@github.com:vim-scripts/applescript.vim.git
@@ -146,30 +142,12 @@
 [submodule "vim/bundle/vim-addon-mv-utils"]
 	path = vim/bundle/vim-addon-mv-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "vim/bundle/ultisnips"]
-	path = vim/bundle/ultisnips
-	url = git@github.com:SirVer/ultisnips.git
-[submodule "vim/bundle/vim-snippets"]
-	path = vim/bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
-[submodule "vim/bundle/vim-snipmate"]
-	path = vim/bundle/vim-snipmate
-	url = git@github.com:garbas/vim-snipmate.git
-[submodule "vim/bundle/Vundle"]
-	path = vim/bundle/Vundle
-	url = https://github.com/gmarik/Vundle.vim.git
 [submodule "vim/bundle/puppet"]
 	path = vim/bundle/puppet
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
-[submodule "vim/bundle/csv"]
-	path = vim/bundle/csv
-	url = https://github.com/chrisbra/csv.vim
 [submodule "vim/bundle/vim-clang-format"]
 	path = vim/bundle/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format.git
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
-[submodule "vim/bundle/LeaderF"]
-	path = vim/bundle/LeaderF
-	url = https://github.com/Yggdroot/LeaderF.git
