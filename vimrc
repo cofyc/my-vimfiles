@@ -280,7 +280,7 @@ au BufRead,BufNewFile *.md :set tw=79
 " Redefine iskeyword, (Perl6 use dash)
 au BufRead,BufNewFile *.pl :set iskeyword=@,48-57,_,192-255,#,-
 
-" Plugins: TagBar
+" Plugin: TagBar
 nnoremap <silent> <F8> :TagbarToggle<CR>
 let g:tagbar_left = 1
 let g:tagbar_sort = 0
@@ -316,7 +316,6 @@ let g:tagbar_type_go = {
 " LeaderF
 " let g:Lf_WindowPosition = 'left'
 " let g:Lf_HideHelp = 1
-
 " noremap <silent> <F8> :LeaderfFunction!<cr>
 
 " No end of line on last line
@@ -350,7 +349,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=7
 au BufRead,BufNewFile *.go set noexpandtab
 "au FileType go au BufWritePre <buffer> Fmt
 au BufNewFile,BufRead *.goc setf c
-" vim-go
+
+" Plugin: vim-go
 let g:go_disable_autoinstall = 1
 let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 0 " too slow
@@ -365,15 +365,14 @@ let g:go_fmt_fail_silently = 1
 let g:go_play_open_browser = 0
 let g:go_get_update = 0
 
-""" Align """
-
+" Plugin: Align
 " align on first separator only
 map <leader>tf= :Align! lp1P1: =<CR>
 " we use pp instead of =>
 map <leader>tfpp :Align! lp1P1: =><CR> 
 map <leader>tf: :Align! lp1P1: :<CR>
 
-""" Tabularize """
+" Plugin: Tabularize
 " http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 if exists(":Tabularize")
   nmap <leader>a= :Tabularize /=<CR>
@@ -397,11 +396,11 @@ function! s:align()
   endif
 endfunction
 
-""" EasyAlign """
+" Plugin: EasyAlign
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
 
-" PreserveNoEOL
+" Plugin: PreserveNoEOL
 let g:PreserveNoEOL = 1
 
 " modeline
@@ -417,7 +416,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
 set complete+=kspell
 
-" NERDTree
+" Plugin: NERDTree
 map <C-n> :NERDTreeToggle<CR>
 "" Open a NERDTree automatically when vim starts up if no files were specified.
 autocmd StdinReadPre * let s:std_in=1
@@ -425,7 +424,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "" Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" NERDCommenter
+" Plugin: NERDCommenter
 let g:NERDCustomDelimiters = {
     \ 'sshconfig': { 'left': '#' },
     \ 'haproxy': { 'left': '#' }
@@ -477,16 +476,16 @@ autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
 " go (extra redraw! to avoid messing up screen)
 autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
 autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
+
 " vim-template
 let g:templates_directory = '~/.vim/templates'
 let g:templates_no_builtin_templates = 1
 
-" ultisnips
+" Plugin: ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 " let g:UltiSnipsExpandTrigger="<tab>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
 " If you want :UltiSnipsEdit to split your window.
 " let g:UltiSnipsEditSplit="vertical"
 
