@@ -93,10 +93,6 @@ map <F3>    :tabnext<CR>
 map <F4>    :tabnew .<CR>
 map <F5>    :tabclose<CR>
 
-" Ctags
-map <F6> :TlistToggle<CR>
-map <F7> :TlistUpdate<CR>
-
 " Exchange Words Separated By '[, ]'
 map <leader>x :s/\v([^, (){}\[\]]*)([, ]\s*)([^, (){}\[\]]*)/\3\2\1/<CR> :nohlsearch<CR>
 
@@ -131,6 +127,8 @@ set wmh=0
 " Plugins: Taglist
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Exit_OnlyWindow = 1
+map <F6> :TlistToggle<CR>
+map <F7> :TlistUpdate<CR>
 
 " Plugins: gitcommit
 autocmd FileType gitcommit DiffGitCached | wincmd r | wincmd =
@@ -282,7 +280,7 @@ au BufRead,BufNewFile *.md :set tw=79
 " Redefine iskeyword, (Perl6 use dash)
 au BufRead,BufNewFile *.pl :set iskeyword=@,48-57,_,192-255,#,-
 
-" TagBar
+" Plugins: TagBar
 nnoremap <silent> <F8> :TagbarToggle<CR>
 let g:tagbar_left = 1
 let g:tagbar_sort = 0
@@ -314,6 +312,12 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
+
+" LeaderF
+" let g:Lf_WindowPosition = 'left'
+" let g:Lf_HideHelp = 1
+
+" noremap <silent> <F8> :LeaderfFunction!<cr>
 
 " No end of line on last line
 " Add end of line at end: :set binary :set eol
