@@ -75,7 +75,7 @@ au BufRead,BufNewFile *.c   :set smartindent
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ['vim-snipmate', 'Vundle', 'xml.vim', 'csv']
+let g:pathogen_disabled = ['vim-cobj', 'Command-T']
 call pathogen#infect()
 
 " Abbreviations
@@ -477,19 +477,11 @@ autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
 autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
 autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
 
-" vim-template
+" Plugin: vim-template
 let g:templates_directory = '~/.vim/templates'
 let g:templates_no_builtin_templates = 1
 
-" Plugin: ultisnips
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-" let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<tab>"
-" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-" If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
-
-""" Show spaces in list
+" Tips: Show spaces in list
 " Run `:set list` to turn on
 " Run `:set nolist` to turn off
 " See docs/ShowSpacesInListMode.md for more infos.
