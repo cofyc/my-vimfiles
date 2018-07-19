@@ -75,7 +75,7 @@ au BufRead,BufNewFile *.c   :set smartindent
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ['vim-cobj', 'Command-T']
+let g:pathogen_disabled = ['vim-cobj', 'Command-T', 'vim-template']
 call pathogen#infect()
 
 " Abbreviations
