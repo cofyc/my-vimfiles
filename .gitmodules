@@ -36,9 +36,6 @@
 [submodule "vim/bundle/arduino"]
 	path = vim/bundle/arduino
 	url = https://github.com/kingbin/vim-arduino.git
-[submodule "vim/bundle/salt-vim"]
-	path = vim/bundle/salt-vim
-	url = https://github.com/saltstack/salt-vim.git
 [submodule "vim/bundle/Align"]
 	path = vim/bundle/Align
 	url = git@github.com:vim-scripts/Align.git
