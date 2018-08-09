@@ -76,6 +76,18 @@ or
 <leader>tf:
 ```
 
+## align first n separators only
+
+a=b=c=d
+
+-> when n is 2
+
+a = b = c=d
+
+```
+Align! ll:
+```
+
 ## align end of line comments
 
 ```
