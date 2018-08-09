@@ -75,7 +75,7 @@ au BufRead,BufNewFile *.c   :set smartindent
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ['vim-cobj', 'Command-T', 'vim-template']
+let g:pathogen_disabled = ['vim-cobj', 'Command-T']
 call pathogen#infect()
 
 " Abbreviations
@@ -364,6 +364,8 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_fail_silently = 1
 let g:go_play_open_browser = 0
 let g:go_get_update = 0
+" increase memory limit, go to definition requires many memory now
+set maxmempattern=2000
 
 " Plugin: Align
 " align on first separator only
