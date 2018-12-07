@@ -93,6 +93,8 @@ that you last edit
 
 `Sexplore` - horizontal split
 
+  Press '%' to create new file in explore window.
+
 `Vexplore` - vertical split
 
 `CTRL-^`   - Edit the alternate file.  Mostly the alternate file is
