@@ -352,7 +352,7 @@ au BufNewFile,BufRead *.goc setf c
 
 " Plugin: vim-go
 let g:go_disable_autoinstall = 1
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "gofmt"
 let g:go_fmt_autosave = 0 " too slow
 let g:go_asmfmt_autosave = 0
 let g:go_highlight_functions = 1
@@ -476,8 +476,8 @@ let g:autopep8_disable_show_diff=1
 autocmd FileType python noremap <buffer> <leader>f :call Autopep8()<CR>
 autocmd FileType python vnoremap <buffer> <leader>f :call Autopep8()<CR>
 " go (extra redraw! to avoid messing up screen)
-autocmd FileType go noremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
-autocmd FileType go vnoremap <buffer> <leader>f :GoFmt<CR> :redraw!<CR>
+autocmd FileType go noremap <buffer> <leader>f :GoImports<CR> :GoFmt<CR> :redraw!<CR>
+autocmd FileType go vnoremap <buffer> <leader>f :GoImports<CR> :GoFmt<CR> :redraw!<CR>
 
 " Plugin: vim-template
 let g:templates_directory = '~/.vim/templates'
@@ -488,3 +488,8 @@ let g:templates_no_builtin_templates = 1
 " Run `:set nolist` to turn off
 " See docs/ShowSpacesInListMode.md for more infos.
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
+" workaround for https://github.com/vim/vim/issues/1671
+if has("unix")
+  set t_BE=
+endif
