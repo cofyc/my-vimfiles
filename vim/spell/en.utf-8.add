@@ -2235,3 +2235,14 @@ volumeMode
 reclaimPolicy
 GKE
 GCP
+TiDB
+EKS
+macOS
+tidb
+gcr
+TiKV
+F5
+TiDBCluster
+pdos
+f
+configurator
