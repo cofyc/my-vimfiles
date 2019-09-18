@@ -366,6 +366,8 @@ let g:go_play_open_browser = 0
 let g:go_get_update = 0
 " increase memory limit, go to definition requires many memory now
 set maxmempattern=2000
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 " Plugin: Align
 " align on first separator only
