@@ -71,7 +71,7 @@ set breakindent
 " https://vi.stackexchange.com/a/5591.
 au BufRead,BufNewFile *.c   :set smartindent
 au BufRead,BufNewFile *.cpp :set smartindent
-au BufRead,BufNewFile *.c   :set smartindent 
+au BufRead,BufNewFile *.c   :set smartindent
 
 " Pathogen, install plugins/scripts in private directories.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -364,6 +364,10 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_fail_silently = 1
 let g:go_play_open_browser = 0
 let g:go_get_update = 0
+" By default, :GoDef uses guru, which is very slow. When change go_def_mode to godef with following configuration, it becomes nice and smooth.
+" https://github.com/fatih/vim-go/issues/1877#issuecomment-405507049
+" let g:go_def_mode = "godef"
+
 " increase memory limit, go to definition requires many memory now
 set maxmempattern=2000
 let g:go_def_mode='gopls'
@@ -373,7 +377,7 @@ let g:go_info_mode='gopls'
 " align on first separator only
 map <leader>tf= :Align! lp1P1: =<CR>
 " we use pp instead of =>
-map <leader>tfpp :Align! lp1P1: =><CR> 
+map <leader>tfpp :Align! lp1P1: =><CR>
 map <leader>tf: :Align! lp1P1: :<CR>
 
 " Plugin: Tabularize
@@ -495,3 +499,7 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 if has("unix")
   set t_BE=
 endif
+
+" for project specific vimrc
+set exrc
+set secure
