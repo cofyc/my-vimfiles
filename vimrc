@@ -366,7 +366,7 @@ let g:go_play_open_browser = 0
 let g:go_get_update = 0
 " By default, :GoDef uses guru, which is very slow. When change go_def_mode to godef with following configuration, it becomes nice and smooth.
 " https://github.com/fatih/vim-go/issues/1877#issuecomment-405507049
-" let g:go_def_mode = "godef"
+"let g:go_def_mode = "godef"
 
 " increase memory limit, go to definition requires many memory now
 set maxmempattern=2000
