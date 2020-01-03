@@ -2279,3 +2279,10 @@ for
 k8s
 expectErr
 serviceAccountName
+nil
+strbuf
+cstring
+strutil
+int32
+e
+va

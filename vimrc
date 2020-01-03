@@ -369,7 +369,7 @@ let g:go_get_update = 0
 "let g:go_def_mode = "godef"
 
 " increase memory limit, go to definition requires many memory now
-set maxmempattern=2000
+set maxmempattern=3000
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
