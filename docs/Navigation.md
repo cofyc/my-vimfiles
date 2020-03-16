@@ -6,7 +6,7 @@ novices spend so much time in insert mode -- it makes vim easy to use. But
 vim's real power lies in command line! You'll find that the better you know
 vim, the less time you will spend in insert mode
 
-## HJKL
+## Use h, j, k, and l
 
 h: left
 
@@ -16,9 +16,9 @@ k: up
 
 l: right
 
-## Motions
+## Use motions to move the cursor in the current line
 
-`f{x}`: move the cursor `f`orward to the next occurrence of x on the current
+`f{x}`: move the cursor forward to the next occurrence of x on the current
 line. 
 
 `t{x}`: same as above, but moves the cursor to right before the character.
@@ -47,11 +47,24 @@ line.
 
 `(`: same as `)` but backward
 
-## Move in file
+## Move efficiently through the file
 
-`<C-F>`: move forward by a screenful of text
+vim has many commands that can send you to where you want to go in your file --
+there's rarely a need to scroll manually through it. The below keystrokes are
+not technically motions, since they move around in the file instead of in a
+particular line.
 
-`<C-B>`: move backward by a screenful of text
+`<c-f>`: jump forward by a screenful of text
+
+`<c-b>`: jump backward by a screenful of text
+
+`<c-d>`: jump forward (down) a half screen
+
+`<c-u>`: jump backward (up) a half screen
+
+`<c-y>`: move forward (down) a line
+
+`<c-e>`: move backward (up) a line
 
 `G`: move to the end of file
 
@@ -72,8 +85,6 @@ line.
 `/{text}`: search
 
 `?{text}`: same as `/{text}`, but in opposite direction
-
-## Bookmark
 
 `m{x}`: make a bookmark named `{x}` at current cursor positiongo to the line
 that you last edit
@@ -101,4 +112,7 @@ that you last edit
           the previously edited file.  This is a quick way to
           toggle between two files.
 
-## Navigating 
+## References
+
+- http://robertames.com/files/vim-editing.html
+- `:help navigation`
