@@ -2289,3 +2289,10 @@ va
 containerd
 kmem
 HJKL
+AdvancedStatefulSet
+TidbCluster
+注意
+rc
+unpause
+TidbMonitor
+iterable
