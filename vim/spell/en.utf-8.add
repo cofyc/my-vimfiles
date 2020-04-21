@@ -2296,3 +2296,5 @@ rc
 unpause
 TidbMonitor
 iterable
+autoScalerPrinterColumns
+bpftrace

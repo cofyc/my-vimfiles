@@ -98,6 +98,32 @@ that you last edit
 `<C-O>`: go to older cursor position in jump list
 `<C-I>`: go to newer cursor position in jump list
 
+## Tag jumping
+
+CTRL-]		
+
+      Jump to the definition of the keyword under the
+			cursor.  Same as ":tag {name}", where {name} is the
+			keyword under or after cursor.
+			When there are several matching tags for {name}, jump
+			to the [count] one.  When no [count] is given the
+			first one is jumped to. See |tag-matchlist| for
+			jumping to other matching tags.
+
+CTRL-W ]					
+CTRL-W CTRL-]
+
+    Split current window in two.  Use identifier under cursor as a
+		tag and jump to it in the new upper window.
+		In Visual mode uses the Visually selected text as a tag.
+		Make new window N high.
+
+CTRL-W }
+  
+    Use identifier under cursor as a tag and perform a :ptag an it. Make the
+    new Preview window (if required) N high. If N is not given, 'previewheight'
+    is used.
+
 ## Navigating files
 
 `Explore`
