@@ -93,7 +93,7 @@
     ignore = dirty
 [submodule "vim/bundle/vim-cobj"]
 	path = vim/bundle/vim-cobj
-	url = git@github.com:Cofyc/vim-cobj.git
+	url = git@github.com:cofyc/vim-cobj.git
 [submodule "vim/bundle/vim-perl"]
 	path = vim/bundle/vim-perl
 	url = git@github.com:vim-perl/vim-perl.git
@@ -123,7 +123,7 @@
 	url = git@github.com:gi1242/vim-tex-syntax.git
 [submodule "vim/bundle/vim-uncrustify"]
 	path = vim/bundle/vim-uncrustify
-	url = git@github.com:Cofyc/vim-uncrustify.git
+	url = git@github.com:cofyc/vim-uncrustify.git
 [submodule "vim/bundle/vim-autopep8"]
 	path = vim/bundle/vim-autopep8
 	url = git@github.com:tell-k/vim-autopep8.git
