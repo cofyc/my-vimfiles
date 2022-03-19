@@ -1,38 +1,38 @@
 [submodule "vim/bundle/Command-T"]
 	path = vim/bundle/Command-T
-	url = git://github.com/wincent/Command-T.git
+	url = https://github.com/wincent/Command-T.git
 [submodule "vim/bundle/taglist"]
 	path = vim/bundle/taglist
-	url = git://github.com/vim-scripts/taglist.vim.git
+	url = https://github.com/vim-scripts/taglist.vim.git
     ignore = dirty
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
-    url = git://github.com/majutsushi/tagbar.git
+    url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/bundle/jshint"]
 	path = vim/bundle/jshint
-	url = git://github.com/walm/jshint.vim.git
+	url = https://github.com/walm/jshint.vim.git
     ignore = dirty
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 [submodule "vim/bundle/vim-bundler"]
 	path = vim/bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
+	url = https://github.com/tpope/vim-markdown.git
 [submodule "vim/bundle/indent-guides"]
 	path = vim/bundle/indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "vim/bundle/arduino"]
 	path = vim/bundle/arduino
 	url = https://github.com/kingbin/vim-arduino.git
@@ -129,7 +129,7 @@
 	url = git@github.com:tell-k/vim-autopep8.git
 [submodule "vim/bundle/vim-template"]
 	path = vim/bundle/vim-template
-	url = git://github.com/aperezdc/vim-template.git
+	url = https://github.com/aperezdc/vim-template.git
 [submodule "vim/bundle/tlib_vim"]
 	path = vim/bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
