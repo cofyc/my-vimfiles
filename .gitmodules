@@ -35,11 +35,11 @@
 	url = https://github.com/kingbin/vim-arduino.git
 [submodule "vim/bundle/Align"]
 	path = vim/bundle/Align
-	url = git@github.com:vim-scripts/Align.git
+	url = https://github.com/vim-scripts/Align.git
     ignore = dirty
 [submodule "vim/bundle/emmet-vim"]
 	path = vim/bundle/emmet-vim
-	url = git@github.com:mattn/emmet-vim.git
+	url = https://github.com/mattn/emmet-vim.git
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
@@ -71,59 +71,59 @@
 	url = https://github.com/vim-scripts/haproxy
 [submodule "vim/bundle/vim-abolish"]
 	path = vim/bundle/vim-abolish
-	url = git@github.com:tpope/vim-abolish.git
+	url = https://github.com/tpope/vim-abolish.git
 [submodule "vim/bundle/keepcase"]
 	path = vim/bundle/keepcase
-	url = git@github.com:vim-scripts/keepcase.vim.git
+	url = https://github.com/vim-scripts/keepcase.vim.git
 [submodule "vim/nerdtree"]
 	path = vim/bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/code_complete"]
 	path = vim/bundle/code_complete
-	url = git@github.com:mbbill/code_complete.git
+	url = https://github.com/mbbill/code_complete.git
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
-	url = git@github.com:vim-scripts/matchit.zip.git
+	url = https://github.com/vim-scripts/matchit.zip.git
     ignore = dirty
 [submodule "vim/bundle/vim-cobj"]
 	path = vim/bundle/vim-cobj
-	url = git@github.com:cofyc/vim-cobj.git
+	url = https://github.com/cofyc/vim-cobj.git
 [submodule "vim/bundle/vim-perl"]
 	path = vim/bundle/vim-perl
-	url = git@github.com:vim-perl/vim-perl.git
+	url = https://github.com/vim-perl/vim-perl.git
 [submodule "vim/bundle/applescript"]
 	path = vim/bundle/applescript
-	url = git@github.com:vim-scripts/applescript.vim.git
+	url = https://github.com/vim-scripts/applescript.vim.git
 [submodule "vim/bundle/vim2hs"]
 	path = vim/bundle/vim2hs
-	url = git@github.com:dag/vim2hs.git
+	url = https://github.com/dag/vim2hs.git
 [submodule "vim/bundle/nginx"]
 	path = vim/bundle/nginx
-	url = git@github.com:vim-scripts/nginx.vim.git
+	url = https://github.com/vim-scripts/nginx.vim.git
 [submodule "vim/bundle/vcl-vim-plugin"]
 	path = vim/bundle/vcl-vim-plugin
-	url = git@github.com:smerrill/vcl-vim-plugin.git
+	url = https://github.com/smerrill/vcl-vim-plugin.git
 [submodule "vim/bundle/neocomplete"]
 	path = vim/bundle/neocomplete
-	url = git@github.com:Shougo/neocomplete.vim.git
+	url = https://github.com/Shougo/neocomplete.vim.git
 [submodule "vim/bundle/a.vim"]
 	path = vim/bundle/a.vim
-	url = git@github.com:vim-scripts/a.vim.git
+	url = https://github.com/vim-scripts/a.vim.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/bundle/vim-tex-syntax"]
 	path = vim/bundle/vim-tex-syntax
-	url = git@github.com:gi1242/vim-tex-syntax.git
+	url = https://github.com/gi1242/vim-tex-syntax.git
 [submodule "vim/bundle/vim-uncrustify"]
 	path = vim/bundle/vim-uncrustify
-	url = git@github.com:cofyc/vim-uncrustify.git
+	url = https://github.com/cofyc/vim-uncrustify.git
 [submodule "vim/bundle/vim-autopep8"]
 	path = vim/bundle/vim-autopep8
-	url = git@github.com:tell-k/vim-autopep8.git
+	url = https://github.com/tell-k/vim-autopep8.git
 [submodule "vim/bundle/vim-template"]
 	path = vim/bundle/vim-template
 	url = https://github.com/aperezdc/vim-template.git
