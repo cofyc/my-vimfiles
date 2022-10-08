@@ -148,3 +148,6 @@
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/vim-code-dark"]
+	path = vim/pack/themes/start/vim-code-dark
+	url = https://github.com/tomasiser/vim-code-dark

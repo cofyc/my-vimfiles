@@ -29,7 +29,7 @@ let mapleader = ","
 syntax on
 
 " Color
-colorscheme torte
+colorscheme codedark
 
 set autoread
 set so=7
