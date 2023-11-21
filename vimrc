@@ -409,9 +409,6 @@ endfunction
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
 
-" Plugin: PreserveNoEOL
-let g:PreserveNoEOL = 1
-
 " modeline
 set modeline
 set modelines=5
